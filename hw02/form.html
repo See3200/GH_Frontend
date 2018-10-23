@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <h1 class="title-form">Profile edit page</h1>
+    <form action="#" class="form">
+        <fieldset>
+            <legend>Basic info</legend>
+            <ul class="list">
+                <li><label for="id">ID</label><input id="id" class="readonly" readonly value="725" name="id"></li>
+                <li><label for="first-name">First Name</label><input id="first-name" type="text" name="first-name"></li>
+                <li><label for="last-name">Last Name</label><input id="last-name" type="text" name="last-name"></li>
+                <li><label for="pass">Password</label><input id="pass" type="password" name="pass" value="*********"></li>
+                <li><label for="phone">Phone</label><input id="phone" type="tel" name="phone" placeholder="380"></li>
+                <li><label for="email">Email</label><input id="email" type="email" name="email" placeholder="myemail@placeholder.com"></li>
+                <li><input id="check" type="checkbox" name="private email" class="private-check" value="private"><label for="check">Keep my email private</label>
+                    <p>We will remove your public profile email and use 1978331+username@users.noreply.localhost</p></li>
+                <li><label for="date">DOB</label><input id="date" type="date"></li>
+                <li><label for="url">Blog url</label><input id="url" type="url" placeholder="http://"></li>
+                <li><label for="about">About me</label><textarea id="about" rows="10"></textarea></li>
+                <li><label for="picture">Profile picture</label><input id="picture" type="file"></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Professional info</legend>
+                <ul class="list">
+                    <li><label for="study">Desire to study</label><input id="study" type="range" min="0" max="10" value="7"></li>
+                    <li><label for="experience">Experience</label>
+                        <select name="experience" id="experience">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3" selected>3</option>
+                        </select> &nbsp; years
+                    </li>
+                    <li><p class="dev-exp">Development Experience</p>
+                        <ul class="list-dev">
+                            <li><input id="dev-exp1" type="radio" name="dev-exp"><label for="dev-exp1">Learning to program</label></li>
+                            <li><input id="dev-exp2" type="radio" name="dev-exp"><label for="dev-exp2">Junior developer</label></li>
+                            <li><input id="dev-exp3" type="radio" name="dev-exp"><label for="dev-exp3">Mid-Level developer</label></li>
+                            <li><input id="dev-exp4" type="radio" name="dev-exp"><label for="dev-exp4">Senior developer</label></li>
+                        </ul>
+                    </li>
+                    <li><label for="country">Country</label>
+                        <select class="country-select" name="country" id="country">
+                            <option disabled selected>- Choose Your Country -</option>
+                            <option value="ua" class="underline-opt">Ukraine</option>
+                            <option value="ua">USA</option>
+                            <option value="tha">Thailand</option>
+                            <option value="sp">Spain</option>
+                        </select>
+                    </li>
+                    <li><input id="prodId" name="prodId" type="hidden" value="xm234jq"></li>
+                    <li>
+                        <p class="skills-title">Skills</p>
+                        <ul class="list-check">
+                            <li><input id="check1" type="checkbox" name="skills" value="html" checked><label for="check1">HTML</label></li>
+                            <li><input id="check2" type="checkbox" name="skills" value="css"><label for="check2">CSS</label></li>
+                            <li><input id="check3" type="checkbox" name="skills" value="js"><label for="check3">JavaScript</label></li>
+                            <li><input id="check4" type="checkbox" name="skills" value="r"><label for="check4">R</label></li>
+                            <li><input id="check5" type="checkbox" name="skills" value="scala"><label for="check5">Scala</label></li>
+                            <li><input id="check6" type="checkbox" name="skills" value="Haskell"><label for="check6">Haskell</label></li>
+                        </ul>
+                    </li>
+                    <li><button type="reset" class="cancel-btn">Cancel</button>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </li>
+                </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
