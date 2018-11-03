@@ -3,16 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <title>Theatre</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/libs/slick.css">
+    <link rel="stylesheet" href="style/libs/slick-theme.css">
+    <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-top container">
+                <div class="logo"><img src="img/logo.png" alt="Theatre" width="203" height="76"></div>
+                <nav>
+                    <ul class="header-nav">
+                        <li class="header-nav_item"><a href="#">головна</a></li>
+                        <li class="header-nav_item"><a href="#">афіша</a></li>
+                        <li class="header-nav_item"><a href="#">репертуар</a></li>
+                        <li class="header-nav_item"><a href="#">новини</a></li>
+                        <li class="header-nav_item"><a href="#">про театр</a></li>
+                        <li class="header-nav_item"><a href="#">персоналії</a></li>
+                        <li class="header-nav_item"><a href="#">контакти</a></li>
+                        <li class="header-nav_item"><a href="#">фестивалі</a></li>
+                    </ul>
+                </nav>
+                <select type="select" class="switch-lang">
+                    <option value="ua" selected>укр</option>
+                    <option value="ru">рус</option>
+                    <option value="eng">анг</option>
+                </select>
+            </div>
+            <div class="slider-wrap">
+                <div id="main-slider" class="slider">
+                    <img src="img/t6-min.jpg" alt="theatre1" width="1920" height="710">
+                    <img src="img/t5-min.jpg" alt="theatre2" width="1920" height="710">
+                    <img src="img/t6-min.jpg" alt="theatre3" width="1920" height="710">
+                    <img src="img/t5-min.jpg" alt="theatre4" width="1920" height="710">
+                    <img src="img/t6-min.jpg" alt="theatre5" width="1920" height="710">
+                </div>
+                <ul class="control-slider">
+                    <li class="control-slider_item">
+                        <div class="control-link">
+                            <span>Нд</span>
+                            <span>21</span>
+                            <span>лютого</span>
+                        </div>
+                    </li>
+                    <li class="control-slider_item">
+                        <div class="control-link">
+                            <span>Нд</span>
+                            <span>21</span>
+                            <span>лютого</span>
+                        </div>
+                    </li>
+                    <li class="control-slider_item">
+                        <div class="control-link active">
+                            <span>Нд</span>
+                            <span>21</span>
+                            <span>лютого</span>
+                        </div>
+                        <div class="control-content">
+                            <p class="perf-title">Сад гетсиманський</p>
+                            <div class="perf-content">
+                                <div class="perf-desc">
+                                    <p>Народна трагедія на 2 дії</p>
+                                    <p>Тривалість вистави 2 год 20 хв</p>
+                                </div>
+                                <a href="#" class="perf-ticket">Купити квиток</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="control-slider_item">
+                        <div class="control-link">
+                            <span>Нд</span>
+                            <span>21</span>
+                            <span>лютого</span>
+                        </div>
+                    </li>
+                    <li class="control-slider_item">
+                        <div class="control-link">
+                            <span>Нд</span>
+                            <span>21</span>
+                            <span>лютого</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-
-
+        </header>
+    </div>
 
 
     <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src="script/libs/slick.min.js"></script>
+    <script src="script/app.js"></script>
 </body>
 </html>

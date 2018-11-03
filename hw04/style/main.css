@@ -1,0 +1,122 @@
+html, body {
+  height: 100%;
+  font-family: sans-serif; }
+
+/*.wrapper{
+    width: 1920px;
+    margin: 0 auto;
+    height: 100%;
+}*/
+.container {
+  width: 1000px;
+  margin: 0 auto; }
+
+.header {
+  width: 100%;
+  background-image: linear-gradient(to right, #ec532a, #c4242e);
+  color: #fff;
+  font-size: 16px; }
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    height: 80px; }
+  .header-nav {
+    display: flex;
+    margin: 0 20px;
+    height: 100%; }
+    .header-nav_item a:link,
+    .header-nav_item a:visited {
+      display: flex;
+      padding: 0 10px;
+      color: inherit;
+      align-items: center;
+      height: 100%;
+      text-decoration: none;
+      transition: all .2s; }
+    .header-nav_item a:hover {
+      color: #000; }
+
+.switch-lang {
+  align-self: center;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer; }
+  .switch-lang option {
+    color: #000; }
+
+.slider-wrap {
+  position: relative;
+  width: 100%;
+  height: 710px;
+  overflow: hidden; }
+  .slider-wrap .slick-dotted.slick-slider {
+    margin-bottom: 0; }
+
+.control-slider {
+  display: flex;
+  position: absolute;
+  min-height: 20px;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%); }
+  .control-slider > :not(:last-child) {
+    border-right: 1px dashed #4e4e4e; }
+  .control-slider_item {
+    display: flex;
+    cursor: pointer; }
+
+.control-link {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #4e4e4e;
+  color: #fff; }
+  .control-link span {
+    color: #7c7c7c;
+    font-size: 18px;
+    font-family: sans-serif; }
+  .control-link :nth-child(2) {
+    display: inline-block;
+    border-bottom: 1px solid #7c7c7c;
+    padding: 10px 20px;
+    color: inherit;
+    font-size: 38px; }
+  .control-link.active {
+    background-color: #e14a2b;
+    border-right: 1px dashed #4e4e4e;
+    width: 99px; }
+
+.control-content {
+  width: 500px;
+  padding: 10px 20px;
+  background-color: #e14a2b; }
+
+.perf-title {
+  font-size: 34px;
+  margin-bottom: 25px; }
+
+.perf-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%; }
+
+.perf-ticket {
+  display: block;
+  height: 25px;
+  padding: 0 10px;
+  line-height: 25px;
+  background-color: #4e4e4e;
+  text-decoration: none;
+  color: inherit;
+  transition: all .2s; }
+  .perf-ticket:hover {
+    background-color: #818181; }
+
+.perf-desc :first-child {
+  padding-bottom: 5px; }
