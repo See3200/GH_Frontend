@@ -1,7 +1,7 @@
-html, body {
-  height: 100%; }
-
 body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   font-family: sans-serif;
   color: #7c7c7c;
   font-size: 14px; }
@@ -132,7 +132,8 @@ body {
   padding-bottom: 5px; }
 
 .content {
-  display: flex; }
+  display: flex;
+  flex: 1 0 auto; }
   .content aside {
     width: 240px;
     flex-shrink: 0; }
