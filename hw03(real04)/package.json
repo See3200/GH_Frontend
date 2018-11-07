@@ -1,0 +1,14 @@
+{
+  "name": "hw04",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass style/sass/main.scss style/main.css -w"
+  },
+  "author": "See",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.4"
+  }
+}
